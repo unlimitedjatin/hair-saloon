@@ -1,0 +1,72 @@
+.hair-style-column {
+    position: relative;
+    cursor: pointer;
+    z-index: 0;
+}
+
+.hair-style-title {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    background: #fff;
+    width: 90%;
+    padding: 10px;
+    z-index: 1;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.ReactModal__Content.ReactModal__Content--after-open {
+    width: 300px;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+    height: fit-content;
+    top: 50% !important;
+    overflow: visible !important;
+}
+
+.hair-tab {
+    position: relative;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.hair-tab::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    left: 0;
+    bottom: 0;
+    background: #dcbd68;
+    height: 3px;
+    transition: .3s;
+}
+
+
+.hair-tab.hair-tab-active::after {
+    width: 100%;
+    background: #000;
+}
+.hair-styles-popup {position: relative;}
+
+.hair-styles-popup button {
+    font-size: 30px;
+    position: absolute;
+    top: -40px;
+    right: -30px;
+}
+.hair-styles-popup h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 1.3em;
+}
+
+
+
+@media screen and (max-width:767px) {
+    .hair-tab {
+        font-size: 16px;
+    }
+}

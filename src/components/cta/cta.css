@@ -1,0 +1,38 @@
+.insta-slide {
+    padding: 10px;
+}
+
+.insta-slide img {
+    height: 150px;
+    width: 100%;
+}
+
+.insta-slide a {
+    text-align: center;
+    position: relative;
+}
+
+.insta-slide a::before {
+    content: url('/images/instagram2.png');
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    width: 0;
+    height: 0;
+    background: #ff000078;
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+.insta-slide a:hover::before {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    bottom: 0;
+    left: 0;
+}
+.hair-section-cta {
+    background: url('/images/bgcta.jpg')no-repeat bottom center/cover fixed;
+}

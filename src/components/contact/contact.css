@@ -1,0 +1,22 @@
+.hair-contact {
+    margin-left: 40rem;
+    padding: 2rem;
+    box-shadow: 0px 0px 30px rgb(0 0 0 / 15%);
+    border-radius: 10px;
+    background-color: #fff;
+}
+.section-hair-contact {
+    background: url('/images/book a appoinment.jpg')no-repeat left center;
+}
+
+@media screen and (max-width:767px) { 
+    .hair-contact {
+        margin: 0 20px;
+    }
+.section-hair-contact {
+    padding-top: 230px;
+    background-position: center top;
+    background-size: contain;
+}
+
+}

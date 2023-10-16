@@ -1,0 +1,30 @@
+.section-inside-ethnix .slick-slide {
+    transition:0.3s;
+    z-index: 1;
+    position: relative;
+    opacity: 0.5;
+}
+.section-inside-ethnix .slick-slide.slick-active {
+    opacity: 0.8;
+}
+.section-inside-ethnix .slick-slide.slick-center {
+    transform: scale(1.3,1.1);
+    z-index: 10;
+    opacity: 1;
+}
+.section-inside-ethnix .slick-slide:not(.slick-active.slick-center) {
+    transform: scale(1, 0.8);
+}
+.section-inside-ethnix .slick-slide.slick-active:not(.slick-center) {
+    transform: scale(1, 0.9);
+}
+
+.section-inside-ethnix .slick-track {
+    margin-top: 20px;
+}
+
+@media screen and (max-width:767px) {
+    .section-inside-ethnix .slick-slide.slick-center {
+        transform: scale(1.05);
+    }
+}

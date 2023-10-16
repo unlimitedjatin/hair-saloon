@@ -1,0 +1,61 @@
+.hair-washes-column {
+    height: 300px;
+    background-blend-mode: overlay;
+    text-align: center;
+    padding: 30px;
+    border-radius: 30px 0 30px 0;
+    transition: 0.3s;
+    position: relative;
+    z-index: 0;
+}
+
+.hair-washes-column:hover {
+    background-color: transparent;
+    box-shadow: 0px 0px 40px -15px rgba(0, 0, 0, 0.15);
+}
+
+.hair-washes-column:hover * {
+    opacity: 0;
+}
+.hair-washes-column::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, transparent 11%, #044079cf 11%);
+    z-index: -1;
+    transition: 0.3s;
+    border-radius: 30px 0 30px 0;
+}
+
+.hair-washes-column:hover::before {
+    height: 0%;
+}
+
+.hair-washes-column h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width:767px) {
+    .hair-washes-column {
+        padding: 10px;
+    }
+    
+    .hair-washes-column p {
+        font-size: 14px;
+        text-align: justify;
+    }
+    .hair-washes-column {
+        height: auto;
+    }
+    .hair-washes-column::before {
+        background: linear-gradient(135deg, transparent 7%, #044079cf 7%);
+    }
+    .hair-washes-column {
+        background-repeat: no-repeat;
+    }
+}
