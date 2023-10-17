@@ -10,17 +10,17 @@ import { faWindowClose } from '@fortawesome/free-solid-svg-icons';
 
 export default function Mediumhair() {
   const images = [
-    ['/images/long pixe 1.jpg', '/images/long pixe 2.jpg'], // Straight Blunt Haircut with Curtain Bangs 
-    ['/images/italian 1.jpg', '/images/italian 2.jpg'], // Long Bob with Choppy Ends 
+    ['/images/curtain-bangs.jpg', '/images/curtain-bangs 2.jpg'], // Straight Blunt Haircut with Curtain Bangs 
+    ['/images/choppy-angled.jpg', '/images/choppy-angled 1.jpg'], // Long Bob with Choppy Ends 
     ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // Center-parted Shoulder-Length Hair 
-    ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // Simple Lob 
-    ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // Asymmetrical Lo,
-    ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // Butterfly Haircu,
+    ['/images/simple  bob.jpg', '/images/simple  bob 2.jpg'], // Simple Lob 
+    ['/images/asymmetrical-bob.jpg', '/images/asymmetrical-bob 2.jpg'], // Asymmetrical Lo,
+    ['/images/butter fly 1.jpg', '/images/butter fly 2.jpg'], // Butterfly Haircu,
     ['/images/mohawk hair cut 1.jpg', '/images/mohawk hair cut 2.jpg'], // Choppy Long Lo,
-    ['/images/bobo with angel 1.jpg', '/images/bobo with angel 2.jpg'], // Curtain Bang,
-    ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], //   'Curly Bang,
-    ['/images/Mullet-hairstyles 1.jpg', '/images/Mullet-hairstyles 2.jpg'], // Wolf Haircu,
-    ['/images/SHORT WAVY 1.jpg', '/images/SHORT WAVY 3.jpg'], // Messy Sha,
+    ['/images/curtain-bangs.jpg', '/images/curtain-bangs 2.jpg'], // Curtain Bang,
+    ['/images/curly-bang.jpg', '/images/curly-bang 1.jpg'], //   'Curly Bang,
+    ['/images/2-wolf-cut.jpg', '/images/2-wolf-cut-on 2.jpg'], // Wolf Haircu,
+    ['/images/messy 1.jpg', '/images/messy 2.jpg'], // Messy Sha,
   ];
   const titles = [
   'Straight Blunt Haircut with Curtain Bangs', 

@@ -17,10 +17,8 @@
 }
 
 h2.title-font {
-  font-size: 35px;
+  font-size: 65px;
   font-weight: 600;
-}
-h2.title-font {
   position: relative;
   text-transform: uppercase;
   animation: aniload 3s;
@@ -34,23 +32,63 @@ h2.title-font::before {
   text-align: center;
   width: 100%;
   height: 100%;
-  transform: rotateX(180deg);
+  transform: rotate3d(1, 0, 0, 126deg);
   background-image: linear-gradient(180deg,rgba(0,0,0,.0) 10%,rgba(0,0,0,.5));
   -webkit-background-clip: text;
   color: transparent;
   text-transform: uppercase;
 }
-
-@keyframes aniload {
-from {
-  transform: translate(-1000px, 0px)
+.section-hair-partners {
+  background: #f5f5f5;
 }
-to {
-  transform: translate(0px, 0px)
+.partner-img {
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0px 0px 40px -25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.partner-img img {filter: sepia(1);transition: 0.3s;}
+
+.partner-img:hover img {
+    filter: sepia(0);
+}
+.team-image {
+  position: relative;
 }
 
+.team-image .team-name {
+  writing-mode: vertical-lr;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  font-size: 30px;
+  font-weight: 500;
+}
 
+.team-image::before {
+  content: '';
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(0deg, #d0a000, transparent);
+  z-index: -1;
+  transition: 0.3s;
+  border-top-left-radius: 100px;
+  border-top-right-radius: 100px;
+}
+.team-image:hover::before {
+  height: 100%;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  background: url('/images/saloon 4.jpg')no-repeat center center/cover;
+}
+.team-image:hover .team-name{
+  color: #fff;
+}
 
 @media screen and (max-width:767px) {
   [class^="section"] {

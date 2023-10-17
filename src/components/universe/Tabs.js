@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Shorthair from './shortHair';
 import Mediumhair from './mediumHair';
+import Longhair from './longHair';
 function Tabs() {
   const [activeTab, setActiveTab] = useState(1);
 
@@ -40,7 +41,7 @@ function Tabs() {
       <div className="mt-4">
         {activeTab === 1 && <div> < Shorthair /></div>}
         {activeTab === 2 && <div>< Mediumhair /></div>}
-        {activeTab === 3 && <div>Content for Tab 3</div>}
+        {activeTab === 3 && <div> < Longhair /> </div>}
       </div>
     </div>
   );

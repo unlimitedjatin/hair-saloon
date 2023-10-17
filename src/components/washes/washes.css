@@ -7,6 +7,7 @@
     transition: 0.3s;
     position: relative;
     z-index: 0;
+    background-repeat: no-repeat;
 }
 
 .hair-washes-column:hover {
@@ -38,7 +39,24 @@
     font-size: 20px;
     font-weight: 600;
 }
-
+.hair-washes-column:nth-child(1)::before {
+    background: linear-gradient(135deg, transparent 11%, rgb(163 141 169 / 90%) 11%);
+}
+.hair-washes-column:nth-child(2)::before {
+    background: linear-gradient(135deg, transparent 11%, rgb(160 204 216 / 90%) 11%);
+}
+.hair-washes-column:nth-child(3)::before {
+    background: linear-gradient(135deg, transparent 11%, rgb(157 138 145 / 90%) 11%);
+}
+.hair-washes-column:nth-child(4)::before {
+    background: linear-gradient(135deg, transparent 11%, rgb(225 205 191 / 90%) 11%);
+}
+.hair-washes-column:nth-child(5)::before {
+    background: linear-gradient(135deg, transparent 11%, rgb(190 184 218 / 90%) 11%);
+}
+.hair-washes-column:nth-child(6)::before {
+    background: linear-gradient(135deg, transparent 11%, rgb(89 68 102 / 90%) 11%);
+}
 
 @media screen and (max-width:767px) {
     .hair-washes-column {
@@ -51,9 +69,6 @@
     }
     .hair-washes-column {
         height: auto;
-    }
-    .hair-washes-column::before {
-        background: linear-gradient(135deg, transparent 7%, #044079cf 7%);
     }
     .hair-washes-column {
         background-repeat: no-repeat;

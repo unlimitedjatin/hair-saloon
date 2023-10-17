@@ -25,9 +25,11 @@
     width: 300px;
     left: 50% !important;
     transform: translate(-50%, -50%);
+    height: -moz-fit-content;
     height: fit-content;
     top: 50% !important;
     overflow: visible !important;
+    box-shadow: 0px 0px 1000px #000;
 }
 
 .hair-tab {
@@ -58,8 +60,8 @@
 .hair-styles-popup button {
     font-size: 30px;
     position: absolute;
-    top: -40px;
-    right: -30px;
+    top: -35px;
+    right: -25px;
 }
 .hair-styles-popup h2 {
     font-size: 20px;
