@@ -10,17 +10,17 @@ import { faWindowClose } from '@fortawesome/free-solid-svg-icons';
 
 export default function Shorthair() {
   const images = [
-    ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // Long Pixie Haircut 
-    ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // Italian Bob Haircut
+    ['/images/long pixe 1.jpg', '/images/long pixe 2.jpg'], // Long Pixie Haircut 
+    ['/images/italian 1.jpg', '/images/italian 2.jpg'], // Italian Bob Haircut
     ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // Modern Mullet with Short Haircut
     ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // Bixie Haircut for Women
     ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // Spiky Pixie Haircut
     ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // One Length Midi or Mid Length Hairstyle
-    ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // Mohawk Short Haircut
-    ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // Angled Bob Hairstyle
+    ['/images/mohawk hair cut 1.jpg', '/images/mohawk hair cut 2.jpg'], // Mohawk Short Haircut
+    ['/images/bobo with angel 1.jpg', '/images/bobo with angel 2.jpg'], // Angled Bob Hairstyle
     ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // Bob with Bangs
-    ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // Mullet Haircut with Layers
-    ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // Short Wavy Bob
+    ['/images/Mullet-hairstyles 1.jpg', '/images/Mullet-hairstyles 2.jpg'], // Mullet Haircut with Layers
+    ['/images/SHORT WAVY 1.jpg', '/images/SHORT WAVY 3.jpg'], // Short Wavy Bob
   ];
   const titles = [
   'Long Pixie Haircut', 
