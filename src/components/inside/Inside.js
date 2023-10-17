@@ -28,7 +28,7 @@ const Inside = () => {
     <div className='section-inside-ethnix py-8'>
       <div className='container mx-auto'>
         <div className='hair-style-top text-center'>
-          <h2 className='title-font mb-5'>Inside Ethnix</h2>
+          <h2 className='title-font mb-5' title='Inside Ethnix'>Inside Ethnix</h2>
         </div>
         <Slider {...settings}>
         <div><img src="/images/saloon 1.jpg" alt="Image 1" /></div>

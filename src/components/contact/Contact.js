@@ -6,7 +6,7 @@ const Contact = () => {
       <div className='container mx-auto'>
         <div className='hair-contact mb-5'>
           <div className='form-div'>
-            <h2 className='title-font mb-5'>Book An Appointment</h2>
+            <h2 className='title-font mb-5' title='Book A Visit'>Book A Visit</h2>
 
             <form>
 
