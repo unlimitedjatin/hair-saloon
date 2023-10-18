@@ -29,7 +29,7 @@ h2.title-font::before {
   position: absolute;
   left: 0;
   top: 39%;
-  text-align: center;
+  text-align: inherit;
   width: 100%;
   height: 100%;
   transform: rotate3d(1, 0, 0, 126deg);
@@ -89,9 +89,17 @@ h2.title-font::before {
 .team-image:hover .team-name{
   color: #fff;
 }
-
+[class^="section"] {
+  overflow: hidden;
+}
 @media screen and (max-width:767px) {
   [class^="section"] {
     padding: 2em 1em;
+}
+h2.title-font {
+  font-size: 30px;
+}
+.hair-section-cta.py-8 {
+  overflow: hidden;
 }
 }
