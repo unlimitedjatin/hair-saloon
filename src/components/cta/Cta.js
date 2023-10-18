@@ -39,7 +39,7 @@ function Cta() {
     <div className='hair-section-cta py-8'>
     <div className='container mx-auto'>
       <div className='hair-style-top text-center'>
-          <h2 className='title-font mb-5 text-white' title="There's a Better Way">There's a Better Way</h2>
+          <h2 className='title shine mb-5 text-white' title="There's a Better Way">There's a Better Way</h2>
           <p className='text-white'>Follow for our weekly update and be the first to know about our specials and promotions.</p>
         </div>
       <Slider {...settings}>

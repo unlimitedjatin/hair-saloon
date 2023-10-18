@@ -16,8 +16,9 @@ function Washes() {
     <div className='section-hair-washes py-8'>
 
       <div className='hair-style-top text-center mb-5'>
-        <h2 className='title-font mb-5' title="Essential Washes">Essential Washes</h2>
-
+        <div class="txt" id="txt">
+          <b>E</b><b>s</b><b>s</b><b>e</b><b>n</b><b>t</b><b>i</b><b>a</b><b>l</b>&nbsp;  <b>W</b><b>a</b><b>s</b><b>h</b><b>e</b><b>s</b>
+        </div>
       </div>
       <div className="container mx-auto grid lg:grid-cols-3 grid-cols-2 lg:gap-10 gap-2">
         {data.map((item, index) => (

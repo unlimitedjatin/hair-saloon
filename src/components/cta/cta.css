@@ -36,3 +36,22 @@
 .hair-section-cta {
     background: url('/images/bgcta.jpg')no-repeat bottom center/cover fixed;
 }
+.shine {
+    background: linear-gradient(90deg, transparent 10%, rgba(255,255,255,1) 10%,rgba(255,255,255,1) 90%, transparent 90%);
+background-size: 500px;
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: rgba(255,255,255,0.5);
+animation: shine 3s linear infinite;
+}
+
+h2.title {
+font-size: 65px;
+font-weight: 600;
+text-transform: uppercase;
+}
+
+@keyframes shine {
+0% {background-position: 500px;}
+to {background-position: -500px;}
+}

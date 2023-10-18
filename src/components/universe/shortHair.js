@@ -14,8 +14,7 @@ export default function Shorthair() {
     ['/images/italian 1.jpg', '/images/italian 2.jpg'], // Italian Bob Haircut
     ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // Modern Mullet with Short Haircut
     ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // Bixie Haircut for Women
-    ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // Spiky Pixie Haircut
-    ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // One Length Midi or Mid Length Hairstyle
+    ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // Spiky Pixie Haircut // One Length Midi or Mid Length Hairstyle
     ['/images/mohawk hair cut 1.jpg', '/images/mohawk hair cut 2.jpg'], // Mohawk Short Haircut
     ['/images/bobo with angel 1.jpg', '/images/bobo with angel 2.jpg'], // Angled Bob Hairstyle
     ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // Bob with Bangs
@@ -28,7 +27,6 @@ export default function Shorthair() {
   'Modern Mullet with Short Haircut', 
   'Bixie Haircut for Women', 
   'Spiky Pixie Haircut',
-  'One Length Midi or Mid Length Hairstyle ',
   'Mohawk Short Haircut',
   'Angled Bob Hairstyle',
   'Bob with Bangs',
@@ -42,7 +40,6 @@ export default function Shorthair() {
   'Mullet is a variation of the modern Short Haircut in which the front hair is more short compared to the back hair. Side hair and front hair can be cut with style to add a modern touch. Nowadays, most mullet Hairstyles for Women are done with colored hair. This Women Hair Cut Style is then trimmed by the side that looks stylish and trendy on ladies. ', 
   'You may confuse that what difference between Bixie and Pixie Hairstyles for Women. A Bixie Haircut for Women is shorter than a bob but longer than a pixie. Most face shapes look stylish with bixie Hair Cuts for Women. But, oval, heart and round faces look great in this trendy women’s hairstyle.', 
   'Spiky Pixie is a trendy Short Hairstyle for Women. If you like haircuts with edgy, piecey textures, then this Ladies Haircut can be the best fit for you. In this haircut, the side and back hair are cropped shorter with longer hair at the top and front. Hair wax and gel are used to make pixie hair spiky and edgy. ',
-  'This is one of the popular Hairstyles for Women in China and other Asian countries. In China and Japan like countries front hair is cut below the eyebrow. The other side of hair is straight and short layered up to the shoulders. While in Western Nations this hair is cut below the shoulder and straight layered in one length.',
   "In a mohawk haircut, the sides of the head are trimmed or shaved and feature a stand-up stripe of hair from the forehead to the back of the head. With colored hair mohawk hair style for women look more stylish and trendy for girls and ladies. Face shapes like oval and square look cool in these haircuts for women. ",
   "It’s a type of short-medium haircut in which hair is cut at a certain angle, making it short in the back and gradually increasing the length towards the front. This is similar to the Italian bob hairstyle. You can style angled bob hairstyles for women in many ways using different textures and volumes of hair according to your hair’s density and face shape.",
   "Bobs with bangs can really complement features of oblong and round shape faces. Women with big foreheads and long pointed chins also can try this celebrity Hairstyle for Women. Bob with bangs style looks very chic and wonderful because it makes your face smaller and highlights your natural features.",

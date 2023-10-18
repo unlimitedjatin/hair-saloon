@@ -11,7 +11,6 @@ import { faWindowClose } from '@fortawesome/free-solid-svg-icons';
 export default function Mediumhair() {
   const images = [
     ['/images/curtain-bangs.jpg', '/images/curtain-bangs 2.jpg'], // Straight Blunt Haircut with Curtain Bangs 
-    ['/images/choppy-angled.jpg', '/images/choppy-angled 1.jpg'], // Long Bob with Choppy Ends 
     ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // Center-parted Shoulder-Length Hair 
     ['/images/simple  bob.jpg', '/images/simple  bob 2.jpg'], // Simple Lob 
     ['/images/asymmetrical-bob.jpg', '/images/asymmetrical-bob 2.jpg'], // Asymmetrical Lo,
@@ -24,7 +23,6 @@ export default function Mediumhair() {
   ];
   const titles = [
   'Straight Blunt Haircut with Curtain Bangs', 
-  'Long Bob with Choppy Ends', 
   'Center-parted Shoulder-Length Hair', 
   'Simple Lob', 
   'Asymmetrical Lob',
@@ -38,7 +36,6 @@ export default function Mediumhair() {
 
   const descriptions = [
   'Medium Hairstyle for Women with bangs give the thin hair more thickness and bounce. This would be the best option if you’re looking for best haircuts for women this weekend for events like dates and parties.', 
-  'Choppy long bob hairstyle for women is easy to style and perfect for edgy modern women who love colored hair. You can give choppy trim to shoulder-length layers with jugged and textured ends. Also, curly hair with a long bob looks fabulous on a stylish personality.',
   'Shoulder length middle parted hairstyle gives you a more youthful look without looking childish. This can be the best haircuts for women who have non-symmetrical faces & wider face shapes to get a slimmer look.', 
   'Simply lob haircut is a perfect hairstyle for all ages of women with both thin and thick hair textures. Lob haircut for women simply looks classic and universal which complements every personality. The lob is slightly choppy from the end and the hairs are just cut above the shoulder. It adds extra movement and natural bounce to your hair.', 
   'An asymmetrical bob is a shorter and medium-length haircut that consists of an unevenly parted bob. This women’s haircut has one side longer hair than another side.',
