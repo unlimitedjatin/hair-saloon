@@ -16,7 +16,7 @@ function Washes() {
     <div className='section-hair-washes py-8'>
 
       <div className='hair-style-top text-center mb-5'>
-        <div class="txt" id="txt">
+        <div className="txt" id="txt">
           <b>E</b><b>s</b><b>s</b><b>e</b><b>n</b><b>t</b><b>i</b><b>a</b><b>l</b>&nbsp;  <b>W</b><b>a</b><b>s</b><b>h</b><b>e</b><b>s</b>
         </div>
       </div>

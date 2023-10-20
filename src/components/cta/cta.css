@@ -55,3 +55,10 @@ text-transform: uppercase;
 0% {background-position: 500px;}
 to {background-position: -500px;}
 }
+
+@media screen and (max-width:767px){
+    
+    h2.title {
+        font-size: 25px;
+        }
+}

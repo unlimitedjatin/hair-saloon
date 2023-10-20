@@ -1,15 +1,29 @@
-import React from 'react'
-import Image from 'next/image'
+import React from 'react';
+import Image from 'next/image';
+import './team.css';
 
 const Team = () => {
   return (
     <div className='hair-section-team py-8'>
       <div className='container mx-auto'>
         <div className='hair-style-top text-center'>
-          <h2 className='title-font mb-5' title='TRENDSETTERS.'>TRENDSETTERS.
-</h2>
+          <h2 className='title mb-5' title='TRENDSETTERS.'><div className="waviy">
+            <span style={{ "--i":1 }}>T</span>
+            <span style={{ "--i":2 }}>R</span>
+            <span style={{ "--i":3 }}>E</span>
+            <span style={{ "--i":4 }}>N</span>
+            <span style={{ "--i":5 }}>D</span>
+            <span style={{ "--i":6 }}>S</span>
+            <span style={{ "--i":7 }}>E</span>
+            <span style={{ "--i":8 }}>T</span>
+            <span style={{ "--i":9 }}>T</span>
+            <span style={{ "--i":10 }}>E</span>
+            <span style={{ "--i":11 }}>R</span>
+            <span style={{ "--i":12 }}>S</span>
+          </div>
+          </h2>
         </div>
-        <div className='columns-5 text-center'>
+        <div className='lg:columns-5 columns-3 text-center'>
           <div className='team-image'>
             <Image
               src="/images/gagan.png"

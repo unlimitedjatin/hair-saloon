@@ -30,7 +30,7 @@ const Inside = () => {
         <div className='hair-style-top text-center'>
           <h2 className='inside-title-font mb-5 animate-charcter' title='Inside Ethnix'>Inside Ethnix</h2>
         </div>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="lg:grid lg:grid-cols-4 grid-cols-1 gap-4">
           <div className="saloon-img">
             <img src="/images/saloon 1.jpg" alt="Image 1" />
           </div>

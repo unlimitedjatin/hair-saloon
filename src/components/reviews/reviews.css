@@ -1,0 +1,72 @@
+.user-star {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  margin-bottom: 10px;
+}
+
+.rating {
+  margin-bottom: 10px;
+}
+
+.user-star h3 {
+  font-size: 18px;
+  color:#fff;
+}
+
+.rating {
+  color: #fbbc04;
+}
+.review-col a {color: #1a73e8;font-weight: 600;}
+.review-col {
+  padding: 10px;
+}
+
+.review {
+  padding: 20px;
+  border: 1px solid #dadce0;
+  min-height: 300px;
+  background: #101010;
+  color:#fff;
+}
+.section-reviews .slick-arrow::before {
+  background: #000;
+  font-size: 18px;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  box-shadow: 0 0 10px;
+  z-index:10;
+}
+.section-reviews .slick-arrow.slick-next {
+  right: -10px;
+  z-index: 10;
+}
+.section-reviews .slick-arrow.slick-prev {
+  left: -10px;
+  z-index: 10;
+}
+.section-reviews .slick-slide.slick-active.slick-center.slick-current {
+  transform: scale(1.1);
+}
+.char {
+  opacity: 0;
+  animation: draw 0.5s forwards;
+}
+.review-title {
+  max-width: 500px;
+  margin: 0 auto;
+}
+@keyframes draw {
+  to {
+      opacity: 1;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .review-title {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+}

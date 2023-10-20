@@ -92,14 +92,51 @@ h2.title-font::before {
 [class^="section"] {
   overflow: hidden;
 }
+.mobile-div{
+  display: none;
+}
+
+
 @media screen and (max-width:767px) {
   [class^="section"] {
     padding: 2em 1em;
 }
-h2.title-font {
-  font-size: 30px;
-}
+
 .hair-section-cta.py-8 {
   overflow: hidden;
+}
+
+
+div#txt {
+  font-size: 25px;
+}
+
+h2.title {
+  font-size: 25px;
+}
+
+.team-image .team-name {
+  font-size: 18px;
+  top: 30px;
+}
+.hair-section-team {
+  padding: 2em 1em;
+}
+.mobile-div{
+  display: block;
+}
+.desktop-div{
+  display: none;
+}
+.mobile-div .slick-slider .slick-slide {
+  padding: 10px;
+}
+
+.mobile-div .partner-img {
+  padding: 10px;
+  height: 80px !important;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
 }
 }

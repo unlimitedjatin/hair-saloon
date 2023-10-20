@@ -218,6 +218,8 @@
     .hair-knife-scoll {
         width: 100px;
         left: 0;
+        bottom: unset;
+        top: 280px;
     }
     
     .hair-dryer-scoll {
