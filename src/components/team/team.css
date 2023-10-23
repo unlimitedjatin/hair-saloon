@@ -26,4 +26,13 @@
     .waviy {
       font-size: 25px;
   }
+  div:has( > .team-image) {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.team-image {
+    width: 30%;
+}
   }

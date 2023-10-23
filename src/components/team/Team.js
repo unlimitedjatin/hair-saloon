@@ -4,7 +4,7 @@ import './team.css';
 
 const Team = () => {
   return (
-    <div className='hair-section-team py-8'>
+    <div className='hair-section-team py-8' id='crew'>
       <div className='container mx-auto'>
         <div className='hair-style-top text-center'>
           <h2 className='title mb-5' title='TRENDSETTERS.'><div className="waviy">
@@ -23,7 +23,7 @@ const Team = () => {
           </div>
           </h2>
         </div>
-        <div className='lg:columns-5 columns-3 text-center'>
+        <div className='lg:grid lg:grid-cols-5 grid-cols-3 justify-center gap-4 text-center'>
           <div className='team-image'>
             <Image
               src="/images/gagan.png"

@@ -14,7 +14,7 @@ export default function Shorthair() {
     ['/images/italian 1.jpg', '/images/italian 2.jpg'], // Italian Bob Haircut
     ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // Modern Mullet with Short Haircut
     ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // Bixie Haircut for Women
-    ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // Spiky Pixie Haircut // One Length Midi or Mid Length Hairstyle
+    ['/images/spiky 1.jpg', '/images/spiky 2.jpg'], // Spiky Pixie Haircut // One Length Midi or Mid Length Hairstyle
     ['/images/mohawk hair cut 1.jpg', '/images/mohawk hair cut 2.jpg'], // Mohawk Short Haircut
     ['/images/bobo with angel 1.jpg', '/images/bobo with angel 2.jpg'], // Angled Bob Hairstyle
     ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // Bob with Bangs

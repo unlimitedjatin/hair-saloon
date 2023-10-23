@@ -39,7 +39,7 @@ function Partners() {
     autoplaySpeed:2000,
   };
   return (
-    <div className='section-hair-partners py-8'>
+    <div id="class" className='section-hair-partners py-8'>
       <div className='container mx-auto'>
         <div className='hair-style-top text-center'>
           <h2 className='title mb-5 text-dark' title="Incomparable Partners" ref={ref}>

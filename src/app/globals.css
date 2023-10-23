@@ -15,13 +15,19 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
-
+body {
+  scroll-behavior: smooth;
+}
 h2.title-font {
   font-size: 65px;
   font-weight: 600;
   position: relative;
   text-transform: uppercase;
   animation: aniload 3s;
+}
+
+h2.inside-title-font {
+  font-size: 65px;
 }
 
 h2.title-font::before {

@@ -21,21 +21,24 @@ const Header = () => {
                             </svg>
                         </button>
                         <div className={`w-full md:block md:w-auto ${isOpen ? 'block' : 'hidden'}`} id="navbar-default">
-                            <ul className="font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
+                            <ul className="nav-list font-medium flex flex-col p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-transparent">
                                 <li>
-                                    <a href="#" className="block py-2 pl-3 pr-4 sm:text-black lg:text-white bg-amber-200 rounded md:bg-transparent md:text-white md:p-0 dark:text-white md:dark:text-amber-200" aria-current="page">Home</a>
+                                    <a href="#" className="block py-2 pl-3 pr-4 sm:text-black lg:text-white bg-amber-200 rounded md:bg-transparent md:text-white md:p-0 dark:text-dark md:dark:text-amber-200" aria-current="page">Home</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="block py-2 pl-3 pr-4 sm:text-black lg:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-200 md:p-0 md:dark:hover:text-amber-200 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">About</a>
+                                    <a href="#hair-trends" className="block py-2 pl-3 pr-4 sm:text-black lg:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-200 md:p-0 md:dark:hover:text-amber-200 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Hair Trends</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="block py-2 pl-3 pr-4 sm:text-black lg:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-200 md:p-0 md:dark:hover:text-amber-200 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
+                                    <a href="#inside-etx" className="block py-2 pl-3 pr-4 sm:text-black lg:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-200 md:p-0 md:dark:hover:text-amber-200 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Inside ETX</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="block py-2 pl-3 pr-4 sm:text-black lg:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-200 md:p-0 md:dark:hover:text-amber-200 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
+                                    <a href="#crew" className="block py-2 pl-3 pr-4 sm:text-black lg:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-200 md:p-0 md:dark:hover:text-amber-200 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Crew</a>
                                 </li>
                                 <li>
-                                    <a href="#" className="block py-2 pl-3 pr-4 sm:text-black lg:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-200 md:p-0 md:dark:hover:text-amber-200 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
+                                    <a href="#class" className="block py-2 pl-3 pr-4 sm:text-black lg:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-200 md:p-0 md:dark:hover:text-amber-200 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Class</a>
+                                </li>
+                                <li>
+                                    <a href="#consultation" className="block py-2 pl-3 pr-4 sm:text-black lg:text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-200 md:p-0 md:dark:hover:text-amber-200 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">For Consultation</a>
                                 </li>
                             </ul>
                         </div>

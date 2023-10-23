@@ -3,8 +3,10 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './inside.css'
+import './inside.css';
+import { Audiowide } from 'next/font/google';
 
+const audioWide = Audiowide({subsets: ['latin'], weight: ['400']})
 const Inside = () => {
   const settings = {
     dots: false,
@@ -25,10 +27,10 @@ const Inside = () => {
     ]
   }
   return (
-    <div className='section-inside-ethnix py-8'>
+    <div id='inside-etx' className='section-inside-ethnix py-8'>
       <div className='container mx-auto'>
         <div className='hair-style-top text-center'>
-          <h2 className='inside-title-font mb-5 animate-charcter' title='Inside Ethnix'>Inside Ethnix</h2>
+          <h2 className={`${audioWide.className} inside-title-font mb-5 animate-charcter`} title='Inside Ethnix'>Inside Ethnix</h2>
         </div>
         <div className="lg:grid lg:grid-cols-4 grid-cols-1 gap-4">
           <div className="saloon-img">

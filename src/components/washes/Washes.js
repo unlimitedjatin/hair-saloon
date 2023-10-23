@@ -1,7 +1,9 @@
 import React from 'react'
 import './washes.css'
+import { Limelight } from 'next/font/google';
 
 
+const limelight = Limelight({ subsets: ['latin'], weight: ['400'] });
 const data = [
   { title: 'HYDRATE', description: "Hydrate wash replenish hair with much needed moisture. Ideal for hair that’s naturally dry, or exposed to harsh, dry climates, it’s packed with antioxidant goodness to help restore a healthy glow to parched locks.", img: '/images/hydrate.png' },
   { title: 'REPAIR', description: "Prepare to renew and restore frazzled locks with our reconstructing treatment shampoo enriched with powerful proteins and amino acids. It will help to strengthen the hair from root to tip, while gently removing impurities and soothing damage.", img: '/images/repair.png' },
@@ -16,7 +18,7 @@ function Washes() {
     <div className='section-hair-washes py-8'>
 
       <div className='hair-style-top text-center mb-5'>
-        <div className="txt" id="txt">
+        <div className={`${limelight.className} txt`} id="txt">
           <b>E</b><b>s</b><b>s</b><b>e</b><b>n</b><b>t</b><b>i</b><b>a</b><b>l</b>&nbsp;  <b>W</b><b>a</b><b>s</b><b>h</b><b>e</b><b>s</b>
         </div>
       </div>

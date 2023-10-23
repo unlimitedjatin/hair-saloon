@@ -63,10 +63,9 @@
     align-items:center;
     justify-content:center;
     flex:1;
-    font-family:sans-serif;
     letter-spacing:0.5px;
     font-size:3.5rem;
-    font-weight:700;
+    font-weight:400;
     position:relative;
     transform-style:preserve-3d;
     perspective:10px;

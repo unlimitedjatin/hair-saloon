@@ -49,7 +49,7 @@ const Reviews = () => {
 
 
   return (
-    <div className='section-reviews py-8'>
+    <div id='review' className='section-reviews py-8'>
       <div className='container mx-auto'>
         <div className="signature-animation">
           <h2 className='title review-title text-center'>

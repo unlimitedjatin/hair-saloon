@@ -1,7 +1,7 @@
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Inter, Orbitron, Audiowide, Limelight } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'], weight: ['400'] });
 
 export const metadata = {
   title: 'Ethnix Hair Saloon',

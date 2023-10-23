@@ -229,4 +229,7 @@
         font-size: 12px;
         background: #ffffffbf;
     }
+    .column.hair-style-column:nth-child(10) {
+        transform: translateX(115%);
+    }
 }
