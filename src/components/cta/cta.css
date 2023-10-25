@@ -3,7 +3,7 @@
 }
 
 .insta-slide img {
-    height: 150px;
+    height: auto;
     width: 100%;
 }
 
@@ -26,6 +26,16 @@
     align-items: center;
     opacity: 0;
 }
+.insta-slide a::after {
+    content: '';
+    background:url('/images/insta.png')no-repeat center center/cover;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    transition: 0.3s;
+}
 .insta-slide a:hover::before {
     width: 100%;
     height: 100%;
@@ -33,32 +43,39 @@
     bottom: 0;
     left: 0;
 }
+
 .hair-section-cta {
     background: url('/images/bgcta.jpg')no-repeat bottom center/cover fixed;
 }
+
 .shine {
-    background: linear-gradient(90deg, transparent 10%, rgba(255,255,255,1) 10%,rgba(255,255,255,1) 90%, transparent 90%);
-background-size: 500px;
-background-clip: text;
--webkit-background-clip: text;
--webkit-text-fill-color: rgba(255,255,255,0.5);
-animation: shine 3s linear infinite;
+    background: linear-gradient(90deg, transparent 10%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, transparent 90%);
+    background-size: 500px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: rgba(255, 255, 255, 0.5);
+    animation: shine 3s linear infinite;
 }
 
 h2.title {
-font-size: 65px;
-font-weight: 600;
-text-transform: uppercase;
+    font-size: 65px;
+    font-weight: 600;
+    text-transform: uppercase;
 }
 
 @keyframes shine {
-0% {background-position: 500px;}
-to {background-position: -500px;}
+    0% {
+        background-position: 500px;
+    }
+
+    to {
+        background-position: -500px;
+    }
 }
 
-@media screen and (max-width:767px){
-    
+@media screen and (max-width:767px) {
+
     h2.title {
         font-size: 25px;
-        }
+    }
 }

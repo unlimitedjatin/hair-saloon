@@ -44,112 +44,111 @@ function Cta() {
         </div>
       <Slider {...settings}>
         <div className='insta-slide'>
-          <a href='#'>
+          <a href='https://instagram.com/ethnix_premium_salon_etx?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr' target='_blank'>
             <Image
-              src="/images/midlength.jpg"
+              src="/images/insta/baibitha .jpg"
               width={200}
               height={200}
-              alt="Picture of the author"
+              alt="Picture of the Customer"
               style={{objectFit: "cover"}}
             />
           </a>
         </div>
         <div className='insta-slide'>
-          <a href='#'>
+          <a href='https://instagram.com/ethnix_premium_salon_etx?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr' target='_blank'>
             <Image
-              src="/images/midlength3.jpg"
+              src="/images/insta/blue.jpg"
               width={200}
               height={200}
-              alt="Picture of the author"
+              alt="Picture of the Customer"
               style={{objectFit: "cover"}}
             />
           </a>
         </div>
         <div className='insta-slide'>
-          <a href='#'>
+          <a href='https://instagram.com/ethnix_premium_salon_etx?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr' target='_blank'>
             <Image
-              src="/images/midlength.jpg"
+              src="/images/insta/chess cover.jpg"
               width={200}
               height={200}
-              alt="Picture of the author"
+              alt="Picture of the Customer"
               style={{objectFit: "cover"}}
             />
           </a>
         </div>
         <div className='insta-slide'>
-          <a href='#'>
+          <a href='https://instagram.com/ethnix_premium_salon_etx?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr' target='_blank'>
             <Image
-              src="/images/midlength3.jpg"
+              src="/images/insta/dum cover.jpg"
               width={200}
               height={200}
-              alt="Picture of the author"
+              alt="Picture of the Customer"
               style={{objectFit: "cover"}}
             />
           </a>
         </div>
         <div className='insta-slide'>
-          <a href='#'>
+          <a href='https://instagram.com/ethnix_premium_salon_etx?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr' target='_blank'>
             <Image
-              src="/images/midlength.jpg"
+              src="/images/insta/enjami cover.jpg"
               width={200}
               height={200}
-              alt="Picture of the author"
+              alt="Picture of the Customer"
               style={{objectFit: "cover"}}
             />
           </a>
         </div>
         <div className='insta-slide'>
-          <a href='#'>
+          <a href='https://instagram.com/ethnix_premium_salon_etx?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr' target='_blank'>
             <Image
-              src="/images/midlength3.jpg"
+              src="/images/insta/green cover.jpg"
               width={200}
               height={200}
-              alt="Picture of the author"
-              style={{objectFit: "cover"}}
-            />
-          </a>
-        </div>
-       
-        <div className='insta-slide'>
-          <a href='#'>
-            <Image
-              src="/images/midlength.jpg"
-              width={200}
-              height={200}
-              alt="Picture of the author"
+              alt="Picture of the Customer"
               style={{objectFit: "cover"}}
             />
           </a>
         </div>
         <div className='insta-slide'>
-          <a href='#'>
+          <a href='https://instagram.com/ethnix_premium_salon_etx?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr' target='_blank'>
             <Image
-              src="/images/midlength3.jpg"
+              src="/images/insta/MADURI.jpg"
               width={200}
               height={200}
-              alt="Picture of the author"
+              alt="Picture of the Customer"
               style={{objectFit: "cover"}}
             />
           </a>
         </div>
         <div className='insta-slide'>
-          <a href='#'>
+          <a href='https://instagram.com/ethnix_premium_salon_etx?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr' target='_blank'>
             <Image
-              src="/images/midlength.jpg"
+              src="/images/insta/sep color chiri.jpg"
               width={200}
               height={200}
-              alt="Picture of the author"
+              alt="Picture of the Customer"
               style={{objectFit: "cover"}}
             />
           </a>
         </div>
         <div className='insta-slide'>
-          <a href='#'>
+          <a href='https://instagram.com/ethnix_premium_salon_etx?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr' target='_blank'>
             <Image
-              src="/images/midlength3.jpg"
+              src="/images/insta/veena.jpg"
               width={200}
               height={200}
-              alt="Picture of the author"
+              alt="Picture of the Customer"
+              style={{objectFit: "cover"}}
+            />
+          </a>
+        </div>
+        <div className='insta-slide'>
+          <a href='https://instagram.com/ethnix_premium_salon_etx?igshid=NzZlODBkYWE4Ng%3D%3D&utm_source=qr' target='_blank'>
+            <Image
+              src="/images/insta/yelow chub.jpg"
+              width={200}
+              height={200}
+              alt="Picture of the Customer"
               style={{objectFit: "cover"}}
             />
           </a>

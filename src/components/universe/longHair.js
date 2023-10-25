@@ -1,5 +1,4 @@
-'use client'
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -9,15 +8,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWindowClose } from '@fortawesome/free-solid-svg-icons';
 
 export default function Longhair() {
-    const images = [
-        ['/images/curtain-bangs.jpg', '/images/curtain-bangs 2.jpg'], // Long Layers
-        ['/images/vintage.jpg', '/images/vintage 2.jpg'], // Vintage Curl'
-        ['/images/updo.jpg', '/images/updo 2.jpg'], // Updo'
-        ['/images/mess with balayge.jpg', '/images/mess with balayge 1.jpg'], // Messy Shag with Balayage'
-        ['/images/asymmetrical-bob.jpg', '/images/asymmetrical-bob 2.jpg'], // Swampy Layers
-        ['/images/multi-layered.jpg', '/images/multi-layered 1.jpg'], // Multi-Layered
-        ['/images/sharp layered.jpg', '/images/sharp-layered 1.jpg'], // Sharp layers
-        ['/images/heavy layered.jpg', '/images/heavy layered 2.jpg'], // Heavy Layered
+  const images = [
+        ['/images/hair/long layer/long layer 2.jpg', '/images/hair/long layer/long layer.jpg'], // Long Layers
+        ['/images/hair/vintage/vintage 1.jpg', '/images/hair/vintage/vintage 2.jpg'], // Vintage Curl'
+        ['/images/hair/updo/updo.jpg', '/images/hair/updo/updo 2.jpg'], // Updo'
+        ['/images/hair/mess with blayage/mess with balayge 1.jpg', '/images/hair/mess with blayage/mess with balayge.jpg'], // Messy Shag with Balayage'
+        ['/images/hair/swampy/Swoopy Layers haircut.jpg', '/images/hair/swampy/Swoopy Layers haircut 2.jpg'], // Swampy Layers
+        ['/images/hair/multi layer/multi-layered.jpg', '/images/hair/multi layer/multi-layered 1.jpg'], // Multi-Layered
+        ['/images/hair/sharp layerd/sharp layered.jpg', '/images/hair/sharp layerd/sharp-layered 1.jpg'], // Sharp layers
+        ['/images/hair/heavy layerd/heavy layered 1.jpg', '/images/hair/heavy layerd/heavy layered 2.jpg'], // Heavy Layered
     ];
     const titles = [
         'Long Layers',
@@ -41,50 +40,70 @@ export default function Longhair() {
         "Heavy layered haircuts for women look absolutely stunning when you left your hair open or do a ponytail with half. The best option for ladies with oval or round face shapes who wanna dress in traditional Indian outfits.",
     ]; // replace with your descriptions
 
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-    };
 
-    const [modalIsOpen, setModalIsOpen] = useState(false);
-    const [modalContent, setModalContent] = useState({ title: '', description: '', images: [] });
 
-    const openModal = (content) => {
-        setModalContent(content);
-        setModalIsOpen(true);
-    };
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    pauseOnHover: false,
+    autoplaySpeed: 0,
+  };
 
-    const closeModal = () => {
-        setModalIsOpen(false);
-    };
+  const [modalIsOpen, setModalIsOpen] = useState(false);
+  const [modalContent, setModalContent] = useState({ title: '', description: '', images: [] });
+  const sliders = useRef(titles.map(() => ({ current: null })));
+  const [hovered, setHovered] = useState(titles.map(() => false));
 
-    return (
-        <div className="grid lg:grid-cols-4 grid-cols-3 gap-4">
-            {titles.map((title, i) => (
-                <div key={i} className="column hair-style-column" onClick={() => openModal({ title, description: descriptions[i], images: images[i] })}>
-                    <h2 className="hair-style-title">{title}</h2>
-                    <Slider {...settings}>
-                        {images[i].map((image, j) => (
-                            <div key={j}>
-                                <img src={image} alt="" />
-                            </div>
-                        ))}
-                    </Slider>
+  useEffect(() => {
+    hovered.forEach((isHovered, i) => {
+      if (isHovered) {
+        sliders.current[i].slickPlay();
+      } else {
+        sliders.current[i].slickPause();
+      }
+    });
+  }, [hovered]);
+
+  const openModal = (content) => {
+    setModalContent(content);
+    setModalIsOpen(true);
+  };
+
+  const closeModal = () => {
+    setModalIsOpen(false);
+  };
+
+  return (
+    <div className="grid lg:grid-cols-4 grid-cols-3 lg:gap-4 gap-2">
+      {titles.map((title, i) => (
+        <div key={i} className="column hair-style-column" onClick={() => openModal({ title, description: descriptions[i], images: images[i] })}>
+          <h2 className="hair-style-title">{title}</h2>
+          <div
+            onMouseEnter={() => setHovered(prevHovered => prevHovered.map((val, index) => index === i ? true : val))}
+            onMouseLeave={() => setHovered(prevHovered => prevHovered.map((val, index) => index === i ? false : val))}
+          >
+            <Slider ref={ref => (sliders.current[i] = ref)} {...settings}>
+              {images[i].map((image, j) => (
+                <div key={j}>
+                  <img src={image} alt="" />
                 </div>
-            ))}
-            <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
-                <div className="hair-styles-popup">
-                    <h2>{modalContent.title}</h2>
-                    <p>{modalContent.description}</p>
-                    <button onClick={closeModal}><FontAwesomeIcon className="" icon={faWindowClose} />
-                    </button>
-                </div>
-            </Modal>
+              ))}
+            </Slider>
+          </div>
         </div>
-    );
+      ))}
+      <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
+        <div className="hair-styles-popup">
+          <h2>{modalContent.title}</h2>
+          <p>{modalContent.description}</p>
+          <button onClick={closeModal}><FontAwesomeIcon className="" icon={faWindowClose} />
+          </button>
+        </div>
+      </Modal>
+    </div>
+  );
 }

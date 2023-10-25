@@ -23,10 +23,10 @@ const Team = () => {
           </div>
           </h2>
         </div>
-        <div className='lg:grid lg:grid-cols-5 grid-cols-3 justify-center gap-4 text-center'>
+        <div className='lg:grid lg:grid-cols-6 justify-center lg:gap-4 gap-2 text-center'>
           <div className='team-image'>
             <Image
-              src="/images/gagan.png"
+              src="/images/staff/GAGAN.png"
               alt="Picture of the Team"
               width={500}
               height={500}
@@ -35,7 +35,7 @@ const Team = () => {
           </div>
           <div className='team-image'>
             <Image
-              src="/images/moon.png"
+              src="/images/staff/MOON.png"
               alt="Picture of the Team"
               width={500}
               height={500}
@@ -44,7 +44,7 @@ const Team = () => {
           </div>
           <div className='team-image'>
             <Image
-              src="/images/nomi.png"
+              src="/images/staff/NOMI .png"
               alt="Picture of the Team"
               width={500}
               height={500}
@@ -53,7 +53,7 @@ const Team = () => {
           </div>
           <div className='team-image'>
             <Image
-              src="/images/shadaz.png"
+              src="/images/staff/SHADAZ.png"
               alt="Picture of the Team"
               width={500}
               height={500}
@@ -62,12 +62,21 @@ const Team = () => {
           </div>
           <div className='team-image'>
             <Image
-              src="/images/sham.png"
+              src="/images/staff/SHAM.png"
               alt="Picture of the Team"
               width={500}
               height={500}
             />
             <h3 className='team-name'>Sham</h3>
+          </div>
+          <div className='team-image'>
+            <Image
+              src="/images/staff/ZIGGY.png"
+              alt="Picture of the Team"
+              width={500}
+              height={500}
+            />
+            <h3 className='team-name'>Ziggy</h3>
           </div>
         </div>
       </div>
