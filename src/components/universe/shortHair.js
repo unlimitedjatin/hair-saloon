@@ -6,8 +6,8 @@ import Modal from 'react-modal';
 import './universe.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWindowClose } from '@fortawesome/free-solid-svg-icons';
-import { motion, AnimatePresence } from "framer-motion";
 
+Modal.setAppElement('#hair-trends');
 
 export default function Shorthair() {
   const images = [
@@ -64,7 +64,26 @@ export default function Shorthair() {
     pauseOnHover: false,
     autoplaySpeed: 0,
   };
+  const imageSliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    pauseOnHover: false,
+    autoplaySpeed: 0,
+  };
 
+  const columnSliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3, // change this to the number of slides you want to show in desktop view
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+  };
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [modalContent, setModalContent] = useState({ title: '', description: '', images: [] });
   const sliders = useRef(titles.map(() => ({ current: null })));
@@ -90,32 +109,76 @@ export default function Shorthair() {
   };
 
   return (
-    <div className="grid lg:grid-cols-5 grid-cols-3 lg:gap-4 gap-2">
-      {titles.map((title, i) => (
-        <div key={i} className="column hair-style-column" onClick={() => openModal({ title, description: descriptions[i], images: images[i] })}>
-          <h2 className="hair-style-title">{title}</h2>
-          <div
-            onMouseEnter={() => setHovered(prevHovered => prevHovered.map((val, index) => index === i ? true : val))}
-            onMouseLeave={() => setHovered(prevHovered => prevHovered.map((val, index) => index === i ? false : val))}
-          >
-            <Slider ref={ref => (sliders.current[i] = ref)} {...settings}>
-              {images[i].map((image, j) => (
-                <div key={j}>
-                  <img src={image} alt="" />
-                </div>
-              ))}
-            </Slider>
+    <>
+      <div className="grid lg:grid-cols-5 grid-cols-3 lg:gap-4 gap-2 desktop-div">
+        {titles.map((title, i) => (
+          <div key={i} className="column hair-style-column" onClick={() => openModal({ title, description: descriptions[i], images: images[i] })}>
+            <h2 className="hair-style-title">{title}</h2>
+            <div
+              onMouseEnter={() => setHovered(prevHovered => prevHovered.map((val, index) => index === i ? true : val))}
+              onMouseLeave={() => setHovered(prevHovered => prevHovered.map((val, index) => index === i ? false : val))}
+            >
+              <Slider ref={ref => (sliders.current[i] = ref)} {...settings}>
+                {images[i].map((image, j) => (
+                  <div key={j}>
+                    <img src={image} alt="" />
+                  </div>
+                ))}
+              </Slider>
+            </div>
           </div>
-        </div>
-      ))}
-      <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
-        <div className="hair-styles-popup">
-          <h2>{modalContent.title}</h2>
-          <p>{modalContent.description}</p>
-          <button onClick={closeModal}><FontAwesomeIcon className="" icon={faWindowClose} />
-          </button>
-        </div>
-      </Modal>
-    </div>
+        ))}
+        <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
+          <div className="hair-styles-popup">
+            <div className="popup-images">
+              {modalContent.images.map((image, j) => (
+                <img key={j} src={image} alt="" />
+              ))}
+            </div>
+            <div className="popup-content">
+              <h2>{modalContent.title}</h2>
+              <p>{modalContent.description}</p>
+            </div>
+            <button onClick={closeModal}><FontAwesomeIcon className="" icon={faWindowClose} />
+            </button>
+          </div>
+        </Modal>
+      </div>
+      <div className="gap-2 hair-style mobile-div">
+        <Slider {...columnSliderSettings}>
+          {titles.map((title, i) => (
+            <div key={i} className="column hair-style-column" onClick={() => openModal({ title, description: descriptions[i], images: images[i] })}>
+              <h2 className="hair-style-title">{title}</h2>
+              <div
+                onMouseEnter={() => setHovered(prevHovered => prevHovered.map((val, index) => index === i ? true : val))}
+                onMouseLeave={() => setHovered(prevHovered => prevHovered.map((val, index) => index === i ? false : val))}
+              >
+                <Slider ref={ref => (sliders.current[i] = ref)} {...imageSliderSettings}>
+                  {images[i].map((image, j) => (
+                    <div key={j}>
+                      <img src={image} alt="" />
+                    </div>
+                  ))}
+                </Slider>
+              </div>
+            </div>
+          ))}
+        </Slider>
+        <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
+          <div className="hair-styles-popup">
+            <div className="popup-images">
+              {modalContent.images.map((image, j) => (
+                <img key={j} src={image} alt="" />
+              ))}
+            </div>
+            <div className="popup-content">
+              <h2>{modalContent.title}</h2>
+              <p>{modalContent.description}</p>
+            </div>
+            <button onClick={closeModal}><FontAwesomeIcon className="" icon={faWindowClose} /></button>
+          </div>
+        </Modal>
+      </div>
+    </>
   );
 }

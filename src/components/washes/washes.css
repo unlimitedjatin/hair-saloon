@@ -9,7 +9,18 @@
     z-index: 0;
     background-repeat: no-repeat;
 }
-
+.hair-washes-column.in-viewport {
+    animation-name: slide-up;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+  }
+  
+  .hair-washes-column.even-child.in-viewport {
+    animation-delay: 0.5s; /* adjust as needed */
+  }
+.hair-washes-column:last-child {
+    color: #fff;
+}
 .hair-washes-column:hover {
     background-color: transparent;
     box-shadow: 0px 0px 40px -15px rgba(0, 0, 0, 0.15);
@@ -112,6 +123,18 @@
  #txt>b:nth-child(9){
     animation-delay:2s;
  }
+
+ @keyframes slide-up {
+    from {
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+
  @keyframes getUp{
     10%,50%{
        transform:rotateX(0);

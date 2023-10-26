@@ -98,8 +98,15 @@ export default function Longhair() {
       ))}
       <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
         <div className="hair-styles-popup">
+          <div className="popup-images">
+          {modalContent.images.map((image, j) => (
+            <img key={j} src={image} alt="" />
+          ))}
+          </div>
+          <div className="popup-content">
           <h2>{modalContent.title}</h2>
           <p>{modalContent.description}</p>
+          </div>
           <button onClick={closeModal}><FontAwesomeIcon className="" icon={faWindowClose} />
           </button>
         </div>

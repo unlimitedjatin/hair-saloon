@@ -14,6 +14,7 @@ const TestimonialSlider = ({ testimonials }) => {
         infinite: true,
         centerPadding: "20px",
         speed: 500,
+        autoplay: true,
         // nextArrow: <FontAwesomeIcon icon={faArrowRight} />,
         // prevArrow: <FontAwesomeIcon icon={faArrowLeft} />,
         slidesToShow: 3,
@@ -49,7 +50,7 @@ const TestimonialSlider = ({ testimonials }) => {
                             ))}
                         </div>
                         <p>{displayText}</p>
-                        {words.length > 30 && <a href="https://www.google.com/maps/place/Ethnix+unisex+hair+design+studio-+Marathalli/@12.954544,77.6953963,17z/data=!4m14!1m5!8m4!1e1!2s106723194695833464245!3m1!1e1!3m7!1s0x3bae130dff219cdd:0x6b76155fedf27256!8m2!3d12.9545388!4d77.6979712!9m1!1b1!16s%2Fg%2F11h12syjtp?hl=en-US&entry=ttu" target="_blank" rel="noopener noreferrer">Read more</a>}
+                        {words.length > 30 && <a href="https://www.google.com/maps/place/Ethnix+Premium+Salon,+AECS+Layout,+Brookfield/@12.9640041,77.7089881,17z/data=!4m8!3m7!1s0x3bae132237b7c4ef:0xac99ae66e2d3bd70!8m2!3d12.9639989!4d77.711563!9m1!1b1!16s%2Fg%2F11tk6l5zmx?hl=en-US&entry=ttu" target="_blank" rel="noopener noreferrer">Read more</a>}
                     </div>
                 </div>
             );

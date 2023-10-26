@@ -8,7 +8,10 @@ import { Orbitron } from 'next/font/google'
 const orbitron = Orbitron({ subsets: ['latin'], weight: ['400'] })
 const Universe = () => {
   const { scrollYProgress } = useScroll();
-  const isMobile = window.matchMedia("(max-width: 600px)").matches;
+  let isMobile;
+  if (typeof window !== 'undefined') {
+    isMobile = window.matchMedia("(max-width: 600px)").matches;
+  }
   const x = isMobile ? useTransform(scrollYProgress, [0, 1], [300, -500]) : useTransform(scrollYProgress, [0, 1], [1200, -500]);
   const rotate = useTransform(scrollYProgress, [0, 0.5], [-45, 360]);
   return (
@@ -31,7 +34,7 @@ const Universe = () => {
       </motion.div>
       <div className='container mx-auto'>
         <div className='hair-style-top text-center mb-5'>
-          <motion.div animate= {{ rotateX : 0 }} initial= {{rotateX : 180}} transition={{duration:1}}>
+          <motion.div initial= {{ x : -500 }} animate= {{ x : 0 }} transition={{ duration:0.5, delay: 0 }}>
             <h2 className={`${orbitron.className} title-font hair-universe-title mb-5`} title='Hair Universe'>Hair Universe</h2>
           </motion.div>
           <p className='lg:w-3/4 mx-auto'>There’s a lot to take into account when searching for the perfect haircut. From your face shape to your preferred hair length to your hair type, it’s important to find a length and texture that works for your strands. The perfect haircut for you will flatter you and your unique hair type and make your styling process even easier.</p>

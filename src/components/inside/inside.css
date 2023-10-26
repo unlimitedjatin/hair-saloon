@@ -28,11 +28,32 @@
 }
 
 .saloon-img img {
-    height: 300px;
+    height: 260px;
     width: 100%;
+    -o-object-fit: cover;
     object-fit: cover;
 }
+.saloon-img {
+    position: relative;
+}
 
+.saloon-img::before {
+    content: '';
+    width: 0;
+    height: 0;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 30px #fff;
+    transition: 0s;
+}
+
+.saloon-img:hover::before {
+    width: 100%;
+    height: 100%;
+    transition: 0.5s ease-in-out;
+}
 .animate-charcter {
     text-transform: uppercase;
     background-image: linear-gradient(-225deg,
