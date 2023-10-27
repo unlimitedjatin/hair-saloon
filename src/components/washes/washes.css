@@ -9,18 +9,22 @@
     z-index: 0;
     background-repeat: no-repeat;
 }
+
 .hair-washes-column.in-viewport {
     animation-name: slide-up;
     animation-duration: 1s;
     animation-fill-mode: both;
-  }
-  
-  .hair-washes-column.even-child.in-viewport {
-    animation-delay: 0.5s; /* adjust as needed */
-  }
+}
+
+.hair-washes-column.even-child.in-viewport {
+    animation-delay: 0.5s;
+    /* adjust as needed */
+}
+
 .hair-washes-column:last-child {
     color: #fff;
 }
+
 .hair-washes-column:hover {
     background-color: transparent;
     box-shadow: 0px 0px 40px -15px rgba(0, 0, 0, 0.15);
@@ -29,6 +33,7 @@
 .hair-washes-column:hover * {
     opacity: 0;
 }
+
 .hair-washes-column::before {
     content: '';
     position: absolute;
@@ -50,45 +55,52 @@
     font-size: 20px;
     font-weight: 600;
 }
+
 .hair-washes-column:nth-child(1)::before {
     background: linear-gradient(135deg, transparent 11%, rgb(163 141 169 / 90%) 11%);
 }
+
 .hair-washes-column:nth-child(2)::before {
     background: linear-gradient(135deg, transparent 11%, rgb(160 204 216 / 90%) 11%);
 }
+
 .hair-washes-column:nth-child(3)::before {
     background: linear-gradient(135deg, transparent 11%, rgb(157 138 145 / 90%) 11%);
 }
+
 .hair-washes-column:nth-child(4)::before {
     background: linear-gradient(135deg, transparent 11%, rgb(225 205 191 / 90%) 11%);
 }
+
 .hair-washes-column:nth-child(5)::before {
     background: linear-gradient(135deg, transparent 11%, rgb(190 184 218 / 90%) 11%);
 }
+
 .hair-washes-column:nth-child(6)::before {
     background: linear-gradient(135deg, transparent 11%, rgb(89 68 102 / 90%) 11%);
 }
 
-#txt{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex:1;
-    letter-spacing:0.5px;
-    font-size:3.5rem;
-    font-weight:400;
-    position:relative;
-    transform-style:preserve-3d;
-    perspective:10px;
-    -webkit-transform-style:preserve-3d;
-    -webkit-perspective:150px;
-     text-transform:uppercase;
- }
- #txt>b {
+#txt {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    letter-spacing: 0.5px;
+    font-size: 3.5rem;
+    font-weight: 400;
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 10px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-perspective: 150px;
+    text-transform: uppercase;
+}
+
+#txt>b {
     height: 4rem;
     box-shadow: 0 .4rem .3rem -.3rem #aaa;
     color: #979c9f;
-    background: linear-gradient(#000,#000,#000);
+    background: linear-gradient(#000, #000, #000);
     background-clip: text;
     text-fill-color: transparent;
     -webkit-background-clip: text;
@@ -99,64 +111,138 @@
     -webkit-transform: rotateX(-85deg);
     animation: getUp 7s infinite;
 }
- #txt>b:nth-child(2){
-    animation-delay:.25s;
- }
- #txt>b:nth-child(3){
-    animation-delay:.5s;
- }
- #txt>b:nth-child(4){
-    animation-delay:.75s;
- }
- #txt>b:nth-child(5){
-    animation-delay:1s;
- }
- #txt>b:nth-child(6){
-    animation-delay:1.25s;
- }
- #txt>b:nth-child(7){
-    animation-delay:1.5s;
- }
- #txt>b:nth-child(8){
-    animation-delay:1.75s;
- }
- #txt>b:nth-child(9){
-    animation-delay:2s;
- }
 
- @keyframes slide-up {
+#txt>b:nth-child(2) {
+    animation-delay: .25s;
+}
+
+#txt>b:nth-child(3) {
+    animation-delay: .5s;
+}
+
+#txt>b:nth-child(4) {
+    animation-delay: .75s;
+}
+
+#txt>b:nth-child(5) {
+    animation-delay: 1s;
+}
+
+#txt>b:nth-child(6) {
+    animation-delay: 1.25s;
+}
+
+#txt>b:nth-child(7) {
+    animation-delay: 1.5s;
+}
+
+#txt>b:nth-child(8) {
+    animation-delay: 1.75s;
+}
+
+#txt>b:nth-child(9) {
+    animation-delay: 2s;
+}
+
+@keyframes slide-up {
     from {
-      transform: translateY(100px);
-      opacity: 0;
+        transform: translateY(100px);
+        opacity: 0;
     }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
 
- @keyframes getUp{
-    10%,50%{
-       transform:rotateX(0);
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
-    0%,60%,100%{
-       transform:rotateX(-85deg);
+}
+
+@keyframes getUp {
+
+    10%,
+    50% {
+        transform: rotateX(0);
     }
- }
+
+    0%,
+    60%,
+    100% {
+        transform: rotateX(-85deg);
+    }
+}
 
 @media screen and (max-width:767px) {
-    .hair-washes-column {
-        padding: 10px;
+    .hair-washes-column h2 {
+        font-size: 20px;
+        font-weight: 900;
     }
-    
+
     .hair-washes-column p {
-        font-size: 14px;
+        font-size: 11px;
         text-align: justify;
+        text-transform: uppercase;
+        line-height: 15px;
+        font-weight: 700;
     }
+
     .hair-washes-column {
         height: auto;
-    }
-    .hair-washes-column {
         background-repeat: no-repeat;
+        border: 1px solid #fff;
+        border-radius: 0;
+        border-top-width: 3px;
+        border-bottom-width: 3px;
+        padding: 10px;
+        min-height: 200px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .hair-washes-column p {
+        display: none;
+    }
+    .hair-washes-column:hover p {
+        display: block;
+    }
+    .hair-washes-column:hover * {
+        opacity: 1;
+    }
+    .section-hair-washes {
+        padding: 2em 0 0;
+    }
+
+    .wash-grid {
+        padding: 1em;
+        background: linear-gradient(65deg, #644d67, #70949d, #ede1da, #a290a8, #BEB8DB);
+    }
+
+    .hair-washes-column::before {
+        border-radius: 0;
+    }
+    .hair-washes-column:hover::before {
+        height: 100%;
+    }
+    .hair-washes-column:nth-child(1)::before {
+        background: linear-gradient(225deg, transparent, rgb(163 141 169));
+    }
+
+    .hair-washes-column:nth-child(2)::before {
+        background: linear-gradient(225deg, transparent, rgb(160 204 216));
+    }
+
+    .hair-washes-column:nth-child(3)::before {
+        background: linear-gradient(225deg, transparent, rgb(157 138 145));
+    }
+
+    .hair-washes-column:nth-child(4)::before {
+        background: linear-gradient(225deg, transparent, rgb(225 205 191));
+    }
+
+    .hair-washes-column:nth-child(5)::before {
+        background: linear-gradient(225deg, transparent, rgb(190 184 218));
+    }
+
+    .hair-washes-column:nth-child(6)::before {
+        background: linear-gradient(225deg, transparent, rgb(89 68 102));
     }
 }

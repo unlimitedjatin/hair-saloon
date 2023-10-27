@@ -80,7 +80,7 @@ h2.title-font::before {
   position: absolute;
   left: 0;
   bottom: 0;
-  background: linear-gradient(0deg, #d0a000, transparent);
+  background: linear-gradient(0deg,transparent, #D09D00);
   z-index: -1;
   transition: 0.3s;
   border-top-left-radius: 100px;
@@ -101,7 +101,11 @@ h2.title-font::before {
 .mobile-div{
   display: none;
 }
-
+video {
+    display: block;
+    max-height: 100vh;
+    object-fit: cover;
+}
 
 @media screen and (max-width:767px) {
   [class^="section"] {

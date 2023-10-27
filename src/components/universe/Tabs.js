@@ -11,7 +11,8 @@ function Tabs() {
   };
 
   return (
-    <div>
+    <>
+    <div className='desktop-div'>
       <ul className="flex justify-center gap-5">
         <li
           className={`hair-tab cursor-pointer ${
@@ -44,6 +45,21 @@ function Tabs() {
         {activeTab === 3 && <div> < Longhair /> </div>}
       </div>
     </div>
+    <div className='mobile-div'>
+          <div className='mobile-short-hair'>
+            <h3>Short-length Haircuts</h3>
+            < Shorthair />
+          </div>
+          <div className='mobile-short-hair'>
+            <h3>Medium-length Haircuts</h3>
+            < Mediumhair />
+          </div>
+          <div className='mobile-short-hair'>
+            <h3>Short-length Haircuts</h3>
+            < Longhair />
+          </div>
+    </div>
+    </>
   );
 }
 

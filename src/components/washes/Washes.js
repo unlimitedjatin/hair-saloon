@@ -39,7 +39,7 @@ function Washes() {
         </div>
       </div>
       <motion.div
-        className="container mx-auto grid lg:grid-cols-3 grid-cols-2 lg:gap-10 gap-2"
+        className="container wash-grid mx-auto grid lg:grid-cols-3 grid-cols-2 lg:gap-10 gap-2"
         ref={parentRef}
         animate={parentControls}
         initial="hidden"

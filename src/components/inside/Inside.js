@@ -43,7 +43,7 @@ const Inside = () => {
           <h2 className={`${audioWide.className} inside-title-font mb-5 animate-charcter`} title='Inside Ethnix'>Inside Ethnix</h2>
         </div>
         <motion.div
-          className="lg:grid lg:grid-cols-5 grid-cols-1 gap-4"
+          className="lg:grid lg:grid-cols-5 gap-4"
           ref={parentRef}
           animate={parentControls}
           initial="hidden"

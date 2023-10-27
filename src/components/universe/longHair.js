@@ -7,6 +7,7 @@ import './universe.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWindowClose } from '@fortawesome/free-solid-svg-icons';
 
+
 export default function Longhair() {
   const images = [
         ['/images/hair/long layer/long layer 2.jpg', '/images/hair/long layer/long layer.jpg'], // Long Layers
@@ -40,9 +41,13 @@ export default function Longhair() {
         "Heavy layered haircuts for women look absolutely stunning when you left your hair open or do a ponytail with half. The best option for ladies with oval or round face shapes who wanna dress in traditional Indian outfits.",
     ]; // replace with your descriptions
 
+  const modalVariants = {
+    hidden: { opacity: 0, y: "-100vh" },
+    visible: { opacity: 1, y: "0" },
+    exit: { opacity: 0, y: "100vh" }
+  };
 
-
-  const settings = {
+  const imageSliderSettings = {
     dots: false,
     infinite: true,
     speed: 1000,
@@ -53,6 +58,15 @@ export default function Longhair() {
     autoplaySpeed: 0,
   };
 
+  const columnSliderSettings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3, // change this to the number of slides you want to show in desktop view
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1000,
+  };
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [modalContent, setModalContent] = useState({ title: '', description: '', images: [] });
   const sliders = useRef(titles.map(() => ({ current: null })));
@@ -78,39 +92,76 @@ export default function Longhair() {
   };
 
   return (
-    <div className="grid lg:grid-cols-4 grid-cols-3 lg:gap-4 gap-2">
-      {titles.map((title, i) => (
-        <div key={i} className="column hair-style-column" onClick={() => openModal({ title, description: descriptions[i], images: images[i] })}>
-          <h2 className="hair-style-title">{title}</h2>
-          <div
-            onMouseEnter={() => setHovered(prevHovered => prevHovered.map((val, index) => index === i ? true : val))}
-            onMouseLeave={() => setHovered(prevHovered => prevHovered.map((val, index) => index === i ? false : val))}
-          >
-            <Slider ref={ref => (sliders.current[i] = ref)} {...settings}>
-              {images[i].map((image, j) => (
-                <div key={j}>
-                  <img src={image} alt="" />
-                </div>
+    <>
+      <div className="grid lg:grid-cols-4 grid-cols-3 lg:gap-4 gap-2 desktop-div">
+        {titles.map((title, i) => (
+          <div key={i} className="column hair-style-column" onClick={() => openModal({ title, description: descriptions[i], images: images[i] })}>
+            <h2 className="hair-style-title">{title}</h2>
+            <div
+              onMouseEnter={() => setHovered(prevHovered => prevHovered.map((val, index) => index === i ? true : val))}
+              onMouseLeave={() => setHovered(prevHovered => prevHovered.map((val, index) => index === i ? false : val))}
+            >
+              <Slider ref={slider => (sliders.current[i] = slider)} {...imageSliderSettings}>
+                {images[i].map((image, j) => (
+                  <div key={j}>
+                    <img src={image} alt="" />
+                  </div>
+                ))}
+              </Slider>
+            </div>
+          </div>
+        ))}
+        <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
+          <div className="hair-styles-popup">
+            <div className="popup-images">
+              {modalContent.images.map((image, j) => (
+                <img key={j} src={image} alt="" />
               ))}
-            </Slider>
+            </div>
+            <div className="popup-content">
+              <h2>{modalContent.title}</h2>
+              <p>{modalContent.description}</p>
+            </div>
+            <button onClick={closeModal}><FontAwesomeIcon className="" icon={faWindowClose} />
+            </button>
           </div>
-        </div>
-      ))}
-      <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
-        <div className="hair-styles-popup">
-          <div className="popup-images">
-          {modalContent.images.map((image, j) => (
-            <img key={j} src={image} alt="" />
+        </Modal>
+      </div>
+      <div className="gap-2 hair-style mobile-div">
+        <Slider {...columnSliderSettings}>
+          {titles.map((title, i) => (
+            <div key={i} className="column hair-style-column" onClick={() => openModal({ title, description: descriptions[i], images: images[i] })}>
+              <h2 className="hair-style-title">{title}</h2>
+              <div
+                onMouseEnter={() => setHovered(prevHovered => prevHovered.map((val, index) => index === i ? true : val))}
+                onMouseLeave={() => setHovered(prevHovered => prevHovered.map((val, index) => index === i ? false : val))}
+              >
+                <Slider ref={ref => (sliders.current[i] = ref)} {...imageSliderSettings}>
+                  {images[i].map((image, j) => (
+                    <div key={j}>
+                      <img src={image} alt="" />
+                    </div>
+                  ))}
+                </Slider>
+              </div>
+            </div>
           ))}
+        </Slider>
+        <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
+          <div className="hair-styles-popup">
+            <div className="popup-images">
+              {modalContent.images.map((image, j) => (
+                <img key={j} src={image} alt="" />
+              ))}
+            </div>
+            <div className="popup-content">
+              <h2>{modalContent.title}</h2>
+              <p>{modalContent.description}</p>
+            </div>
+            <button onClick={closeModal}><FontAwesomeIcon className="" icon={faWindowClose} /></button>
           </div>
-          <div className="popup-content">
-          <h2>{modalContent.title}</h2>
-          <p>{modalContent.description}</p>
-          </div>
-          <button onClick={closeModal}><FontAwesomeIcon className="" icon={faWindowClose} />
-          </button>
-        </div>
-      </Modal>
-    </div>
+        </Modal>
+      </div>
+    </>
   );
 }

@@ -81,6 +81,10 @@
 }
 
 @media screen and (max-width:767px) {
+    .section-inside-ethnix {
+        /* background: linear-gradient(90deg, black, transparent); */
+        padding: 2em 0 0;
+    }
     .section-inside-ethnix .slick-slide.slick-center {
         transform: scale(1.05);
     }
@@ -93,25 +97,33 @@
         font-size: 25px;
     }
     .saloon-img {
-        margin-bottom: 11px;
+        /* margin-bottom: 11px; */
+        min-width: 300px;
     }
     
-    .saloon-img img {
+    /* .saloon-img img {
         height: 300px;
-    }
+        min-width: 300px;
+    } */
     
     .section-inside-ethnix .hair-style-top + div {
-        height: 300px;
+        height: auto;
         overflow: auto;
         padding: 10px;
+        display: flex;
+        flex-wrap: nowrap;
+        width: auto;
+        background: linear-gradient(90deg, black, transparent);
+        padding: 1em;
     }
     
     .section-inside-ethnix .hair-style-top + div::-webkit-scrollbar {
         background: #a79d9d;
         width: 2px;
+        height: 2px;
     }
     .section-inside-ethnix .hair-style-top + div::-webkit-scrollbar-thumb{
         background: red;
-        height:30px
+        height:2px
     }
 }

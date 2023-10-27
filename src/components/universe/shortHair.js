@@ -7,7 +7,6 @@ import './universe.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWindowClose } from '@fortawesome/free-solid-svg-icons';
 
-Modal.setAppElement('#hair-trends');
 
 export default function Shorthair() {
   const images = [
@@ -23,15 +22,15 @@ export default function Shorthair() {
     ['/images/hair/SHORT WAVY BOB CUT/SHORT WAVY 1.jpg', '/images/hair/SHORT WAVY BOB CUT/SHORT WAVY 3.jpg'], // Short Wavy Bob
   ];
   const titles = [
-    'Long Pixie Haircut',
-    'Italian Bob Haircut',
-    'Modern Mullet with Short Haircut',
-    'Bixie Haircut for Women',
-    'Spiky Pixie Haircut',
-    'Mohawk Short Haircut',
-    'Angled Bob Hairstyle',
+    'Long Pixie',
+    'Italian Bob',
+    'Modern Mullet',
+    'Bixie',
+    'Spiky Pixie',
+    'Mohawk Short',
+    'Angled Bob',
     'Bob with Bangs',
-    'Mullet Haircut with Layers',
+    'Mullet with Layers',
     'Short Wavy Bob',
   ];
 
@@ -54,16 +53,6 @@ export default function Shorthair() {
     exit: { opacity: 0, y: "100vh" }
   };
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 1000,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: false,
-    pauseOnHover: false,
-    autoplaySpeed: 0,
-  };
   const imageSliderSettings = {
     dots: false,
     infinite: true,
@@ -118,7 +107,7 @@ export default function Shorthair() {
               onMouseEnter={() => setHovered(prevHovered => prevHovered.map((val, index) => index === i ? true : val))}
               onMouseLeave={() => setHovered(prevHovered => prevHovered.map((val, index) => index === i ? false : val))}
             >
-              <Slider ref={ref => (sliders.current[i] = ref)} {...settings}>
+              <Slider ref={slider => (sliders.current[i] = slider)} {...imageSliderSettings}>
                 {images[i].map((image, j) => (
                   <div key={j}>
                     <img src={image} alt="" />
