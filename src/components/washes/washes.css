@@ -210,7 +210,9 @@
     .section-hair-washes {
         padding: 2em 0 0;
     }
-
+    #txt>b {
+        height: 2.5rem;
+    }
     .wash-grid {
         padding: 1em;
         background: linear-gradient(65deg, #644d67, #70949d, #ede1da, #a290a8, #BEB8DB);

@@ -6,6 +6,7 @@ import Modal from 'react-modal';
 import './universe.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faWindowClose } from '@fortawesome/free-solid-svg-icons';
+Modal.setAppElement('#hair-trends');
 
 
 export default function Shorthair() {
