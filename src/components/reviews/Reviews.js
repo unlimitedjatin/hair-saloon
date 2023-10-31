@@ -55,7 +55,7 @@ const Reviews = () => {
           <h2 className='title review-title text-center'>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 100">
               <text ref={textRef} x="50%" y="50%" dy=".35em" textAnchor="middle" stroke="#000" fill="none" strokeWidth="2" strokeDasharray="1000">
-                REVIEWS
+              BLISSFULLY
               </text>
             </svg>
           </h2>

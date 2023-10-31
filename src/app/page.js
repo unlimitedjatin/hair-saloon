@@ -10,6 +10,7 @@ import Team from '@/components/team/Team'
 import Reviews from '@/components/reviews/Reviews'
 import Partners from '@/components/partners/Partners'
 import Footer from '@/components/footer/Footer'
+import SocialLinks from '@/components/stickybar/SocialLinks'
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       < Reviews />
       < Partners />
       < Footer />
+      <SocialLinks />
     </main>
   )
 }

@@ -2,6 +2,7 @@
 import React, { useEffect } from 'react';
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from 'react-intersection-observer';
+import { Bebas_Neue } from 'next/font/google';
 import './washes.css'
 
 const data = [
@@ -13,6 +14,8 @@ const data = [
   { title: 'ANTI- AGING', description: "Give damaged, ageing hair a youthful pick-me-up with our restorative softening shampoo that delivers powerful rejuvenating benefits every time you wash. An Antioxidant-rich blend of Immortelle and Baobab Oils, Lotus Flower, Orchid Extract and a nourishing Amino Acid complex enhance hair strength and deliver moisture for renewed lustre, body and bounce.", img: '/images/young.png' },
 
 ];
+
+const bebasNeue = Bebas_Neue ({ subsets: ['latin'], weight: ['400']})
 
 // Hook for animating when in view
 const useAnimateOnInView = () => {
@@ -65,7 +68,7 @@ function Washes() {
             style={{ backgroundImage: `url(${item.img})` }}
           >
             <h2 className="mb-5">{item.title}</h2>
-            <p className="">{item.description}</p>
+            <p className={bebasNeue.className}>{item.description}</p>
           </motion.div>
         ))}
       </motion.div>
